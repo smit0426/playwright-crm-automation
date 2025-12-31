@@ -1,0 +1,305 @@
+Step,Timestamp,Module,Category,Action,Expected,Actual,Status,Details,Screenshot
+1,2025-12-31 15:53:26,Login,Navigation,Authentication,,Successfully logged in,PASS,Successfully logged in,001_Login_Success_155326.png
+2,2025-12-31 15:53:36,Dashboard,Navigation,Navigation,,Successfully opened Dashboard,PASS,Successfully opened Dashboard,
+3,2025-12-31 15:53:41,Dashboard,Navigation,Page Title,,Leading Law practice management software in New York,PASS,Leading Law practice management software in New York,
+4,2025-12-31 15:53:42,Dashboard,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,002_Dashboard_Main_Page_155341.png
+5,2025-12-31 15:53:42,Dashboard,Create,CREATE Button,At least one create/add trigger,No create button found,INFO,No create button found,
+6,2025-12-31 15:53:42,Dashboard,Read,READ Data,Data grid should exist,No data tables found,INFO,No data tables found,
+7,2025-12-31 15:53:44,Dashboard,General,Marker Missing (pre-edit locate),,Marker 'Dashboard_yZqEh5' not present,FAIL,Marker 'Dashboard_yZqEh5' not present,
+8,2025-12-31 15:53:44,Dashboard,Update,UPDATE Button,At least one edit action,No edit button found,INFO,No edit button found,
+9,2025-12-31 15:53:46,Dashboard,General,Marker Missing (pre-delete locate),,Marker 'Dashboard_yZqEh5_edit' not present,FAIL,Marker 'Dashboard_yZqEh5_edit' not present,
+10,2025-12-31 15:53:46,Dashboard,Delete,DELETE Button,At least one delete action,No delete button found,INFO,No delete button found,
+11,2025-12-31 15:53:46,Dashboard,Search,Search/Filter,,No search/filter fields found,INFO,No search/filter fields found,
+12,2025-12-31 15:53:46,Dashboard,Buttons,Button Found: 1,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+13,2025-12-31 15:53:46,Dashboard,Buttons,Button Found: 2,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+14,2025-12-31 15:53:46,Dashboard,Buttons,Button Found: 3,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+15,2025-12-31 15:53:46,Dashboard,Buttons,Button Found: Back To CRM,,"Type: span, Visible: Yes, Enabled: Yes",PASS,"Type: span, Visible: Yes, Enabled: Yes",
+16,2025-12-31 15:53:46,Dashboard,Buttons,Button Found: Get Started,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+17,2025-12-31 15:53:46,Dashboard,Buttons,Button Found: Back To CRM,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+18,2025-12-31 15:54:00,Calendar,Navigation,Navigation,,Successfully opened Calendar,PASS,Successfully opened Calendar,
+19,2025-12-31 15:54:05,Calendar,Navigation,Page Title,,Admin | Calendar,PASS,Admin | Calendar,
+20,2025-12-31 15:54:05,Calendar,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,003_Calendar_Main_Page_155405.png
+21,2025-12-31 15:54:07,Calendar,Create,CREATE Button,Create form should open,Clicked create trigger Add Event,PASS,Clicked create trigger Add Event,003_Calendar_Main_Page_155405.png
+22,2025-12-31 15:54:08,Calendar,Create,CREATE Form Opened,,Form has 11 visible fields,PASS,Form has 11 visible fields,004_Calendar_Create_Form_155407.png
+23,2025-12-31 15:54:10,Calendar,Create,CREATE Fields Filled,All required fields populated,"Text set Calendar_7yeuRp (SearchInput); Select set (add_event_calendar_type); Skip field error Message: element not interactable
+  (Ses; Skip field error Message: element not interactable
+  (Ses; Skip field error Message: element not interactable
+  (Ses",PASS,"Text set Calendar_7yeuRp (SearchInput); Select set (add_event_calendar_type); Skip field error Message: element not interactable
+  (Ses; Skip field error Message: element not interactable
+  (Ses; Skip field error Message: element not interactable
+  (Ses",
+24,2025-12-31 15:54:28,Calendar,General,Marker Found (post-create search),,Marker 'Calendar_7yeuRp' located,PASS,Marker 'Calendar_7yeuRp' located,
+25,2025-12-31 15:54:28,Calendar,Create,CREATE Persist,New record should be added and visible,Rows now 8,PASS,Marker 'Calendar_7yeuRp' located after save (rows 8->8),005_Calendar_Create_Save_155412.png
+26,2025-12-31 15:54:28,Calendar,Read,READ Table 1,Data should be listed,"9 rows, 7 columns",PASS,"9 rows, 7 columns",003_Calendar_Main_Page_155405.png
+27,2025-12-31 15:54:28,Calendar,Read,READ Table 2,Data should be listed,"1 rows, 7 columns",PASS,"1 rows, 7 columns",003_Calendar_Main_Page_155405.png
+28,2025-12-31 15:54:32,Calendar,General,Marker Found (pre-edit locate),,Marker 'Calendar_7yeuRp' located,PASS,Marker 'Calendar_7yeuRp' located,
+29,2025-12-31 15:54:37,Calendar,General,Marker Found (pre-delete locate),,Marker 'Calendar_7yeuRp_edit' located,PASS,Marker 'Calendar_7yeuRp_edit' located,
+30,2025-12-31 15:54:50,Calendar,General,Marker Found (post-delete verify),,Marker 'Calendar_7yeuRp_edit' located,PASS,Marker 'Calendar_7yeuRp_edit' located,
+31,2025-12-31 15:54:50,Calendar,Delete,DELETE Action,Record should be removed,Delete triggered; marker present after delete? True,FAIL,Delete triggered; marker present after delete? True,006_Calendar_Delete_155440.png
+32,2025-12-31 15:54:53,Calendar,Search,Search/Filter,Results filter,Search input responsive,PASS,Search executed with term 'test',003_Calendar_Main_Page_155405.png
+33,2025-12-31 15:54:55,Calendar,Pagination,Pagination,,Found pagination with 1 elements,PASS,Found pagination with 1 elements,003_Calendar_Main_Page_155405.png
+34,2025-12-31 15:54:56,Calendar,Buttons,Button Found: Report Issue,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+35,2025-12-31 15:54:56,Calendar,Buttons,Button Found: ADD MATTER,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+36,2025-12-31 15:54:56,Calendar,Buttons,Button Found: Create New,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+37,2025-12-31 15:54:56,Calendar,Buttons,Button Found: More,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+38,2025-12-31 15:54:56,Calendar,Dropdowns,Dropdown: dropdown_0,,"Found 4 options: 10, 25, 50, 100",PASS,"Found 4 options: 10, 25, 50, 100",
+39,2025-12-31 15:54:56,Calendar,Widget,Calendar Widget,,Calendar view found,PASS,Calendar view found,007_Calendar_Calendar_Widget_155456.png
+40,2025-12-31 15:55:05,Tasks,Navigation,Navigation,,Successfully opened Tasks,PASS,Successfully opened Tasks,
+41,2025-12-31 15:55:10,Tasks,Navigation,Page Title,,Admin | Tasks,PASS,Admin | Tasks,
+42,2025-12-31 15:55:10,Tasks,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,008_Tasks_Main_Page_155510.png
+43,2025-12-31 15:55:13,Tasks,Create,CREATE Button,Create form should open,Clicked create trigger ADD,PASS,Clicked create trigger ADD,008_Tasks_Main_Page_155510.png
+44,2025-12-31 15:55:13,Tasks,Create,CREATE Form Opened,,Form has 30 visible fields,PASS,Form has 30 visible fields,009_Tasks_Create_Form_155513.png
+45,2025-12-31 15:55:21,Tasks,Create,CREATE Fields Filled,All required fields populated,Text set Tasks_CrP5So (SearchInput); Select set (taskTable_length); Text set Tasks_CrP5So (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,PASS,Text set Tasks_CrP5So (SearchInput); Select set (taskTable_length); Text set Tasks_CrP5So (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,
+46,2025-12-31 15:55:40,Tasks,General,Marker Found (post-create search),,Marker 'Tasks_CrP5So' located,PASS,Marker 'Tasks_CrP5So' located,
+47,2025-12-31 15:55:40,Tasks,Create,CREATE Persist,New record should be added and visible,Rows now 1,PASS,Marker 'Tasks_CrP5So' located after save (rows 6->1),010_Tasks_Create_Save_155523.png
+48,2025-12-31 15:55:40,Tasks,Read,READ Table 1,Data should be listed,"2 rows, 8 columns",PASS,"2 rows, 8 columns",008_Tasks_Main_Page_155510.png
+49,2025-12-31 15:55:40,Tasks,Read,READ Table 2,Data should be listed,"2 rows, 5 columns",PASS,"2 rows, 5 columns",008_Tasks_Main_Page_155510.png
+50,2025-12-31 15:55:45,Tasks,General,Marker Found (pre-edit locate),,Marker 'Tasks_CrP5So' located,PASS,Marker 'Tasks_CrP5So' located,
+51,2025-12-31 15:55:49,Tasks,General,Marker Found (pre-delete locate),,Marker 'Tasks_CrP5So_edit' located,PASS,Marker 'Tasks_CrP5So_edit' located,
+52,2025-12-31 15:56:02,Tasks,General,Marker Missing (post-delete verify),,Marker 'Tasks_CrP5So_edit' not present,FAIL,Marker 'Tasks_CrP5So_edit' not present,
+53,2025-12-31 15:56:02,Tasks,Delete,DELETE Action,Record should be removed,Delete triggered; marker present after delete? False,PASS,Delete triggered; marker present after delete? False,011_Tasks_Delete_155552.png
+54,2025-12-31 15:56:04,Tasks,Search,Search/Filter,Results filter,Search input responsive,PASS,Search executed with term 'test',008_Tasks_Main_Page_155510.png
+55,2025-12-31 15:56:04,Tasks,Pagination,Pagination,,Found pagination with 8 elements,PASS,Found pagination with 8 elements,008_Tasks_Main_Page_155510.png
+56,2025-12-31 15:56:04,Tasks,Buttons,Button Found: 00:00:00,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+57,2025-12-31 15:56:04,Tasks,Buttons,Button Found: ADD,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+58,2025-12-31 15:56:05,Tasks,Buttons,Button Found: ×,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+59,2025-12-31 15:56:05,Tasks,Buttons,Button Found: SAVE,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+60,2025-12-31 15:56:05,Tasks,Buttons,Button Found: CANCEL,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+61,2025-12-31 15:56:05,Tasks,Buttons,Button Found: ×,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+62,2025-12-31 15:56:05,Tasks,Buttons,Button Found: SAVE,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+63,2025-12-31 15:56:05,Tasks,Buttons,Button Found: CANCEL,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+64,2025-12-31 15:56:05,Tasks,Dropdowns,Dropdown: dropdown_7,,"Found 4 options: 10, 25, 50, 100",PASS,"Found 4 options: 10, 25, 50, 100",
+65,2025-12-31 15:56:14,Matters,Navigation,Navigation,,Successfully opened Matters,PASS,Successfully opened Matters,
+66,2025-12-31 15:56:19,Matters,Navigation,Page Title,,Admin | Tasks,PASS,Admin | Tasks,
+67,2025-12-31 15:56:19,Matters,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,012_Matters_Main_Page_155619.png
+68,2025-12-31 15:56:21,Matters,Create,CREATE Button,Create form should open,Clicked create trigger ADD,PASS,Clicked create trigger ADD,012_Matters_Main_Page_155619.png
+69,2025-12-31 15:56:22,Matters,Create,CREATE Form Opened,,Form has 30 visible fields,PASS,Form has 30 visible fields,013_Matters_Create_Form_155621.png
+70,2025-12-31 15:56:29,Matters,Create,CREATE Fields Filled,All required fields populated,Text set Matters_AqpZDI (SearchInput); Select set (taskTable_length); Text set Matters_AqpZDI (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,PASS,Text set Matters_AqpZDI (SearchInput); Select set (taskTable_length); Text set Matters_AqpZDI (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,
+71,2025-12-31 15:56:48,Matters,General,Marker Found (post-create search),,Marker 'Matters_AqpZDI' located,PASS,Marker 'Matters_AqpZDI' located,
+72,2025-12-31 15:56:48,Matters,Create,CREATE Persist,New record should be added and visible,Rows now 1,PASS,Marker 'Matters_AqpZDI' located after save (rows 6->1),014_Matters_Create_Save_155631.png
+73,2025-12-31 15:56:48,Matters,Read,READ Table 1,Data should be listed,"2 rows, 8 columns",PASS,"2 rows, 8 columns",012_Matters_Main_Page_155619.png
+74,2025-12-31 15:56:48,Matters,Read,READ Table 2,Data should be listed,"2 rows, 5 columns",PASS,"2 rows, 5 columns",012_Matters_Main_Page_155619.png
+75,2025-12-31 15:56:52,Matters,General,Marker Found (pre-edit locate),,Marker 'Matters_AqpZDI' located,PASS,Marker 'Matters_AqpZDI' located,
+76,2025-12-31 15:56:56,Matters,General,Marker Found (pre-delete locate),,Marker 'Matters_AqpZDI_edit' located,PASS,Marker 'Matters_AqpZDI_edit' located,
+77,2025-12-31 15:57:09,Matters,General,Marker Found (post-delete verify),,Marker 'Matters_AqpZDI_edit' located,PASS,Marker 'Matters_AqpZDI_edit' located,
+78,2025-12-31 15:57:09,Matters,Delete,DELETE Action,Record should be removed,Delete triggered; marker present after delete? True,FAIL,Delete triggered; marker present after delete? True,015_Matters_Delete_155659.png
+79,2025-12-31 15:57:12,Matters,Search,Search/Filter,Results filter,Search input responsive,PASS,Search executed with term 'test',012_Matters_Main_Page_155619.png
+80,2025-12-31 15:57:15,Matters,Pagination,Pagination,,Found pagination with 1 elements,PASS,Found pagination with 1 elements,012_Matters_Main_Page_155619.png
+81,2025-12-31 15:57:15,Matters,Buttons,Button Found: Report Issue,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+82,2025-12-31 15:57:15,Matters,Buttons,Button Found: ADD MATTER,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+83,2025-12-31 15:57:15,Matters,Buttons,Button Found: Create New,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+84,2025-12-31 15:57:15,Matters,Buttons,Button Found: More,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+85,2025-12-31 15:57:15,Matters,Dropdowns,Dropdown: dropdown_0,,"Found 4 options: 10, 25, 50, 100",PASS,"Found 4 options: 10, 25, 50, 100",
+86,2025-12-31 15:57:15,Matters,Financial,Financial Data,,Found 3 amount/financial fields,PASS,Found 3 amount/financial fields,
+87,2025-12-31 15:57:25,Contacts,Navigation,Navigation,,Successfully opened Contacts,PASS,Successfully opened Contacts,
+88,2025-12-31 15:57:30,Contacts,Navigation,Page Title,,Admin | Contacts,PASS,Admin | Contacts,
+89,2025-12-31 15:57:30,Contacts,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,016_Contacts_Main_Page_155730.png
+90,2025-12-31 15:57:37,Contacts,General,Critical Error,,"Message: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7b94988e5
+	0x7ff7b9498940
+	0x7ff7b927165d
+	0x7ff7b9287ed3
+	0x7ff7b92869d3
+	0x7ff7b927a006
+	0x7ff7b9277f4c
+	0x7ff7b927c3b4
+	0x7ff7b927c47f
+	0x7ff7b92c390c
+	0x7ff7b92f1fda
+	0x7ff7b92bc746
+	0x7ff7b931ac97
+	0x7ff7b92bac29
+	0x7ff7b92bba93
+	0x7ff7b97b0640
+	0x7ff7b97aaf80
+	0x7ff7b97c96e6
+	0x7ff7b94b5de4
+	0x7ff7b94bed8c
+	0x7ff7b94a2004
+	0x7ff7b94a21b5
+	0x7ff7b9487ee2
+	0x7ffaec23e8d7
+	0x7ffaed8ec53c
+",FAIL,"Message: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7b94988e5
+	0x7ff7b9498940
+	0x7ff7b927165d
+	0x7ff7b9287ed3
+	0x7ff7b92869d3
+	0x7ff7b927a006
+	0x7ff7b9277f4c
+	0x7ff7b927c3b4
+	0x7ff7b927c47f
+	0x7ff7b92c390c
+	0x7ff7b92f1fda
+	0x7ff7b92bc746
+	0x7ff7b931ac97
+	0x7ff7b92bac29
+	0x7ff7b92bba93
+	0x7ff7b97b0640
+	0x7ff7b97aaf80
+	0x7ff7b97c96e6
+	0x7ff7b94b5de4
+	0x7ff7b94bed8c
+	0x7ff7b94a2004
+	0x7ff7b94a21b5
+	0x7ff7b9487ee2
+	0x7ffaec23e8d7
+	0x7ffaed8ec53c
+",
+91,2025-12-31 15:57:45,Activities,Navigation,Navigation,,Successfully opened Activities,PASS,Successfully opened Activities,
+92,2025-12-31 15:57:50,Activities,Navigation,Page Title,,Admin | Activities,PASS,Admin | Activities,
+93,2025-12-31 15:57:50,Activities,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,017_Activities_Main_Page_155750.png
+94,2025-12-31 15:57:52,Activities,Create,CREATE Button,Create form should open,Clicked create trigger NEW TIME ENTRY,PASS,Clicked create trigger NEW TIME ENTRY,017_Activities_Main_Page_155750.png
+95,2025-12-31 15:57:53,Activities,Create,CREATE Form Opened,,Form has 16 visible fields,PASS,Form has 16 visible fields,018_Activities_Create_Form_155752.png
+96,2025-12-31 15:57:55,Activities,General,Validation on empty submit,,This field is required. | This field is required.,INFO,This field is required. | This field is required.,
+97,2025-12-31 15:57:59,Activities,Create,CREATE Fields Filled,All required fields populated,Text set Activities_Q0BXQK (SearchInput); Select set (activityTable_length); Text set Activities_Q0BXQK (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,PASS,Text set Activities_Q0BXQK (SearchInput); Select set (activityTable_length); Text set Activities_Q0BXQK (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,
+98,2025-12-31 15:58:02,Activities,General,Validation after save,,This field is required. | This field is required.,INFO,This field is required. | This field is required.,
+99,2025-12-31 15:58:17,Activities,General,Marker Found (post-create search),,Marker 'Activities_Q0BXQK' located,PASS,Marker 'Activities_Q0BXQK' located,
+100,2025-12-31 15:58:17,Activities,Create,CREATE Persist,New record should be added and visible,Rows now 1,PASS,Marker 'Activities_Q0BXQK' located after save (rows 6->1),019_Activities_Create_Save_155801.png
+101,2025-12-31 15:58:17,Activities,Read,READ Table 1,Data should be listed,"2 rows, 12 columns",PASS,"2 rows, 12 columns",017_Activities_Main_Page_155750.png
+102,2025-12-31 15:58:17,Activities,Read,READ Table 2,Data should be listed,"7 rows, 16 columns",PASS,"7 rows, 16 columns",017_Activities_Main_Page_155750.png
+103,2025-12-31 15:58:17,Activities,Read,Row Action Buttons,,Found 4 action buttons in table,PASS,Found 4 action buttons in table,
+104,2025-12-31 15:58:21,Activities,General,Marker Found (pre-edit locate),,Marker 'Activities_Q0BXQK' located,PASS,Marker 'Activities_Q0BXQK' located,
+105,2025-12-31 15:58:26,Activities,General,Marker Found (pre-delete locate),,Marker 'Activities_Q0BXQK_edit' located,PASS,Marker 'Activities_Q0BXQK_edit' located,
+106,2025-12-31 15:58:39,Activities,General,Marker Found (post-delete verify),,Marker 'Activities_Q0BXQK_edit' located,PASS,Marker 'Activities_Q0BXQK_edit' located,
+107,2025-12-31 15:58:39,Activities,Delete,DELETE Action,Record should be removed,Delete triggered; marker present after delete? True,FAIL,Delete triggered; marker present after delete? True,020_Activities_Delete_155828.png
+108,2025-12-31 15:58:41,Activities,Search,Search/Filter,Results filter,Search input responsive,PASS,Search executed with term 'test',017_Activities_Main_Page_155750.png
+109,2025-12-31 15:58:44,Activities,Pagination,Pagination,,Found pagination with 1 elements,PASS,Found pagination with 1 elements,017_Activities_Main_Page_155750.png
+110,2025-12-31 15:58:44,Activities,Buttons,Button Found: Report Issue,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+111,2025-12-31 15:58:44,Activities,Buttons,Button Found: ADD MATTER,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+112,2025-12-31 15:58:44,Activities,Buttons,Button Found: Create New,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+113,2025-12-31 15:58:44,Activities,Buttons,Button Found: More,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+114,2025-12-31 15:58:44,Activities,Dropdowns,Dropdown: dropdown_0,,"Found 4 options: 10, 25, 50, 100",PASS,"Found 4 options: 10, 25, 50, 100",
+115,2025-12-31 15:58:53,Billing,Navigation,Navigation,,Successfully opened Billing,PASS,Successfully opened Billing,
+116,2025-12-31 15:58:59,Billing,Navigation,Page Title,,Admin | Billing,PASS,Admin | Billing,
+117,2025-12-31 15:58:59,Billing,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,021_Billing_Main_Page_155859.png
+118,2025-12-31 15:59:05,Billing,General,Critical Error,,"Message: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7b94988e5
+	0x7ff7b9498940
+	0x7ff7b927165d
+	0x7ff7b9287ed3
+	0x7ff7b92869d3
+	0x7ff7b927a006
+	0x7ff7b9277f4c
+	0x7ff7b927c3b4
+	0x7ff7b927c47f
+	0x7ff7b92c390c
+	0x7ff7b92f1fda
+	0x7ff7b92bc746
+	0x7ff7b931ac97
+	0x7ff7b92bac29
+	0x7ff7b92bba93
+	0x7ff7b97b0640
+	0x7ff7b97aaf80
+	0x7ff7b97c96e6
+	0x7ff7b94b5de4
+	0x7ff7b94bed8c
+	0x7ff7b94a2004
+	0x7ff7b94a21b5
+	0x7ff7b9487ee2
+	0x7ffaec23e8d7
+	0x7ffaed8ec53c
+",FAIL,"Message: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7b94988e5
+	0x7ff7b9498940
+	0x7ff7b927165d
+	0x7ff7b9287ed3
+	0x7ff7b92869d3
+	0x7ff7b927a006
+	0x7ff7b9277f4c
+	0x7ff7b927c3b4
+	0x7ff7b927c47f
+	0x7ff7b92c390c
+	0x7ff7b92f1fda
+	0x7ff7b92bc746
+	0x7ff7b931ac97
+	0x7ff7b92bac29
+	0x7ff7b92bba93
+	0x7ff7b97b0640
+	0x7ff7b97aaf80
+	0x7ff7b97c96e6
+	0x7ff7b94b5de4
+	0x7ff7b94bed8c
+	0x7ff7b94a2004
+	0x7ff7b94a21b5
+	0x7ff7b9487ee2
+	0x7ffaec23e8d7
+	0x7ffaed8ec53c
+",
+119,2025-12-31 15:59:13,Litigation Funding,Navigation,Navigation,,Successfully opened Litigation Funding,PASS,Successfully opened Litigation Funding,
+120,2025-12-31 15:59:18,Litigation Funding,Navigation,Page Title,,Admin | Litigation Funding,PASS,Admin | Litigation Funding,
+121,2025-12-31 15:59:18,Litigation Funding,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,022_Litigation Funding_Main_Page_155918.png
+122,2025-12-31 15:59:20,Litigation Funding,Create,CREATE Button,Create form should open,Clicked create trigger NEW FUNDING REQUEST,PASS,Clicked create trigger NEW FUNDING REQUEST,022_Litigation Funding_Main_Page_155918.png
+123,2025-12-31 15:59:21,Litigation Funding,Create,CREATE Form Opened,,Form has 19 visible fields,PASS,Form has 19 visible fields,023_Litigation Funding_Create_Form_155920.png
+124,2025-12-31 15:59:23,Litigation Funding,General,Validation on empty submit,,Please select matter. | Please select client. | Please enter funded amount. | Please enter funded amount. | Please enter funded amount.,INFO,Please select matter. | Please select client. | Please enter funded amount. | Please enter funded amount. | Please enter funded amount.,
+125,2025-12-31 15:59:29,Litigation Funding,Create,CREATE Fields Filled,All required fields populated,Text set Litigation Funding_O03aAn (SearchInput); Select set (fundTable_length); Text set Litigation Funding_O03aAn (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,PASS,Text set Litigation Funding_O03aAn (SearchInput); Select set (fundTable_length); Text set Litigation Funding_O03aAn (); Skip field error Message: element click intercepted: Elem; Skip field error Message: element click intercepted: Elem,
+126,2025-12-31 15:59:31,Litigation Funding,General,Validation after save,,Please select matter. | Please select client. | Please enter funded amount.,INFO,Please select matter. | Please select client. | Please enter funded amount.,
+127,2025-12-31 15:59:48,Litigation Funding,General,Marker Found (post-create search),,Marker 'Litigation Funding_O03aAn' located,PASS,Marker 'Litigation Funding_O03aAn' located,
+128,2025-12-31 15:59:48,Litigation Funding,Create,CREATE Persist,New record should be added and visible,Rows now 1,PASS,Marker 'Litigation Funding_O03aAn' located after save (rows 2->1),024_Litigation Funding_Create_Save_155931.png
+129,2025-12-31 15:59:48,Litigation Funding,Read,READ Table 1,Data should be listed,"2 rows, 13 columns",PASS,"2 rows, 13 columns",022_Litigation Funding_Main_Page_155918.png
+130,2025-12-31 15:59:48,Litigation Funding,Read,READ Table 2,Data should be listed,"2 rows, 6 columns",PASS,"2 rows, 6 columns",022_Litigation Funding_Main_Page_155918.png
+131,2025-12-31 15:59:52,Litigation Funding,General,Marker Found (pre-edit locate),,Marker 'Litigation Funding_O03aAn' located,PASS,Marker 'Litigation Funding_O03aAn' located,
+132,2025-12-31 15:59:57,Litigation Funding,General,Marker Missing (pre-delete locate),,Marker 'Litigation Funding_O03aAn_edit' not present,FAIL,Marker 'Litigation Funding_O03aAn_edit' not present,
+133,2025-12-31 15:59:57,Litigation Funding,Delete,DELETE Locate,,Marker not found to delete,FAIL,Marker not found to delete,
+134,2025-12-31 15:59:59,Litigation Funding,Search,Search/Filter,Results filter,Search input responsive,PASS,Search executed with term 'test',022_Litigation Funding_Main_Page_155918.png
+135,2025-12-31 16:00:01,Litigation Funding,Pagination,Pagination,,Found pagination with 1 elements,PASS,Found pagination with 1 elements,022_Litigation Funding_Main_Page_155918.png
+136,2025-12-31 16:00:02,Litigation Funding,Buttons,Button Found: Report Issue,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+137,2025-12-31 16:00:02,Litigation Funding,Buttons,Button Found: ADD MATTER,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+138,2025-12-31 16:00:02,Litigation Funding,Buttons,Button Found: Create New,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+139,2025-12-31 16:00:02,Litigation Funding,Buttons,Button Found: More,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+140,2025-12-31 16:00:02,Litigation Funding,Dropdowns,Dropdown: dropdown_0,,"Found 4 options: 10, 25, 50, 100",PASS,"Found 4 options: 10, 25, 50, 100",
+141,2025-12-31 16:00:02,Litigation Funding,Financial,Financial Data,,Found 3 amount/financial fields,PASS,Found 3 amount/financial fields,
+142,2025-12-31 16:00:11,Documents,Navigation,Navigation,,Successfully opened Documents,PASS,Successfully opened Documents,
+143,2025-12-31 16:00:16,Documents,Navigation,Page Title,,Admin | Documents,PASS,Admin | Documents,
+144,2025-12-31 16:00:16,Documents,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,025_Documents_Main_Page_160016.png
+145,2025-12-31 16:00:19,Documents,Create,CREATE Button,Create form should open,Clicked create trigger CREATE DOCUMENT,PASS,Clicked create trigger CREATE DOCUMENT,025_Documents_Main_Page_160016.png
+146,2025-12-31 16:00:21,Documents,Create,CREATE Form Opened,,Form has 10 visible fields,PASS,Form has 10 visible fields,026_Documents_Create_Form_160019.png
+147,2025-12-31 16:00:23,Documents,Create,CREATE Fields Filled,All required fields populated,Text set Documents_mL0sL8 (SearchInput); Select set (documentsTable_length); Text set Documents_mL0sL8 (); Clicked checkbox (select_all_documents); Clicked checkbox (documents_selected),PASS,Text set Documents_mL0sL8 (SearchInput); Select set (documentsTable_length); Text set Documents_mL0sL8 (); Clicked checkbox (select_all_documents); Clicked checkbox (documents_selected),
+148,2025-12-31 16:00:40,Documents,General,Marker Found (post-create search),,Marker 'Documents_mL0sL8' located,PASS,Marker 'Documents_mL0sL8' located,
+149,2025-12-31 16:00:40,Documents,Create,CREATE Persist,New record should be added and visible,Rows now 1,PASS,Marker 'Documents_mL0sL8' located after save (rows 2->1),027_Documents_Create_Save_160025.png
+150,2025-12-31 16:00:40,Documents,Read,READ Table 1,Data should be listed,"2 rows, 12 columns",PASS,"2 rows, 12 columns",025_Documents_Main_Page_160016.png
+151,2025-12-31 16:00:40,Documents,Read,READ Table 2,Data should be listed,"4 rows, 5 columns",PASS,"4 rows, 5 columns",025_Documents_Main_Page_160016.png
+152,2025-12-31 16:00:45,Documents,General,Marker Found (pre-edit locate),,Marker 'Documents_mL0sL8' located,PASS,Marker 'Documents_mL0sL8' located,
+153,2025-12-31 16:00:49,Documents,General,Marker Found (pre-delete locate),,Marker 'Documents_mL0sL8_edit' located,PASS,Marker 'Documents_mL0sL8_edit' located,
+154,2025-12-31 16:00:49,Documents,Delete,DELETE Button,At least one delete action,No delete button found,INFO,No delete button found,
+155,2025-12-31 16:00:51,Documents,Search,Search/Filter,Results filter,Search input responsive,PASS,Search executed with term 'test',025_Documents_Main_Page_160016.png
+156,2025-12-31 16:00:54,Documents,Pagination,Pagination,,Found pagination with 1 elements,PASS,Found pagination with 1 elements,025_Documents_Main_Page_160016.png
+157,2025-12-31 16:00:54,Documents,Buttons,Button Found: Report Issue,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+158,2025-12-31 16:00:54,Documents,Buttons,Button Found: ADD MATTER,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+159,2025-12-31 16:00:54,Documents,Buttons,Button Found: Create New,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+160,2025-12-31 16:00:54,Documents,Buttons,Button Found: More,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+161,2025-12-31 16:00:54,Documents,Dropdowns,Dropdown: dropdown_0,,"Found 4 options: 10, 25, 50, 100",PASS,"Found 4 options: 10, 25, 50, 100",
+162,2025-12-31 16:00:57,Time Entries,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
+163,2025-12-31 16:00:57,Expenses,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
+164,2025-12-31 16:01:04,Reports,Navigation,Navigation,,Successfully opened Reports,PASS,Successfully opened Reports,
+165,2025-12-31 16:01:09,Reports,Navigation,Page Title,,Report Issue | Guardian Capital USA,PASS,Report Issue | Guardian Capital USA,
+166,2025-12-31 16:01:09,Reports,Page,Page Loaded,,Main page accessible,PASS,Main page accessible,028_Reports_Main_Page_160109.png
+167,2025-12-31 16:01:09,Reports,Create,CREATE Button,At least one create/add trigger,No create button found,INFO,No create button found,
+168,2025-12-31 16:01:09,Reports,Read,READ Data,Data grid should exist,No data tables found,INFO,No data tables found,
+169,2025-12-31 16:01:11,Reports,General,Marker Missing (pre-edit locate),,Marker 'Reports_chzUdt' not present,FAIL,Marker 'Reports_chzUdt' not present,
+170,2025-12-31 16:01:11,Reports,Update,UPDATE Button,At least one edit action,No edit button found,INFO,No edit button found,
+171,2025-12-31 16:01:13,Reports,General,Marker Missing (pre-delete locate),,Marker 'Reports_chzUdt_edit' not present,FAIL,Marker 'Reports_chzUdt_edit' not present,
+172,2025-12-31 16:01:13,Reports,Delete,DELETE Button,At least one delete action,No delete button found,INFO,No delete button found,
+173,2025-12-31 16:01:13,Reports,Search,Search/Filter,,No search/filter fields found,INFO,No search/filter fields found,
+174,2025-12-31 16:01:13,Reports,Buttons,Button Found: Submit,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+175,2025-12-31 16:01:13,Reports,Buttons,Button Found: Back To CRM,,"Type: span, Visible: Yes, Enabled: Yes",PASS,"Type: span, Visible: Yes, Enabled: Yes",
+176,2025-12-31 16:01:13,Reports,Buttons,Button Found: Submit,,"Type: button, Visible: Yes, Enabled: Yes",PASS,"Type: button, Visible: Yes, Enabled: Yes",
+177,2025-12-31 16:01:14,Reports,Buttons,Button Found: Back To CRM,,"Type: a, Visible: Yes, Enabled: Yes",PASS,"Type: a, Visible: Yes, Enabled: Yes",
+178,2025-12-31 16:01:16,Notes,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
+179,2025-12-31 16:01:16,Emails,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
+180,2025-12-31 16:01:18,Settings,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
+181,2025-12-31 16:01:19,Accounts,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
+182,2025-12-31 16:01:21,Import Data,Navigation,Navigation,,Could not open module,FAIL,Could not open module,
